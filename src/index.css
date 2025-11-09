@@ -1,13 +1,23 @@
+@font-face {
+  font-family: 'pricedown';
+  src: url('/pricedown.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: pricedown;
-  src: url(./pricedown.otf);
-}
-html,body{
-  width: 100%;
-  height: 100%;
-  font-family: 'pricedown';
+@layer base {
+  html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'pricedown', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  
+  * {
+    font-family: 'pricedown', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
 }
